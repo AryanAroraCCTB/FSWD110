@@ -1,0 +1,21 @@
+{
+  "name": "my-typescript-project",
+  "version": "1.0.0",
+  "description": "First TS Project for FSWD110",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon -r ts-node/register src/index.ts"
+  },
+  "author": "Aryan Arora",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.4"
+  }
+}
