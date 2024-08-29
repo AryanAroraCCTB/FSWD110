@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 export const Counter = (props: any) => {
     let [count, setCount] = useState(0);
     let [fname, setFname] = useState('');
-    let [lname, setLname] = useState('');
 
     useEffect(() => {
         console.log("useEffect got triggered on every render");
@@ -47,30 +46,14 @@ export const Counter = (props: any) => {
         targetButton.style = 'color: red;';
     }
 
-    const fnameChangeHandler = (event: any) => {
-        console.log('Typing...', event.target.name, event.target.value);
-        
-        // const { name, value } = event.target;
-        const name = event.target.name;
-        const value = event.target.value;
-
-        setFname(value);
-    }
-
-    const lnameChangeHandler = (event: any) => {
-        console.log('Typing...', event.target.name, event.target.value);
-        
-        // const { name, value } = event.target;
-        const name = event.target.name;
-        const value = event.target.value;
-
-        setLname(value);
+    const nameChangeHandler = (event: any) => {
+        // console.log('Typing...', event.target.value);
+        setFname(event.target.value);
     }
 
     const submitHandler = (event: any) => {
         event.preventDefault();
         // console.log("Form Submitted");
-        alert(`Form submitted with input: ${fname}`);
     }
 
     return (
@@ -95,8 +78,7 @@ export const Counter = (props: any) => {
             >
                 <div>
                     <label htmlFor='FirstName'>First Name</label>
-                    <input name='FirstName' type='text' value={fname} onChange={fnameChangeHandler}/>
-                    <input name='LastName' type='text' value={lname} onChange={lnameChangeHandler}/>
+                    <input name='FirstName' type='text' onChange={nameChangeHandler}/>
                 </div>
                 <button type="submit">Submit</button>
             </form>

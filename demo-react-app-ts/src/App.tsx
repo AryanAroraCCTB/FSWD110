@@ -57,11 +57,12 @@ export const App = () => {
 
       <hr/>
 
-      { loading ? <Counter/> : ''}
 
       <button onClick={(e) => setLoading(true)}>Hide Document Title</button>
 
       { !loading ? <DocumentTitle/> : ''}
+      
+      { !loading ? <Counter/> : ''}
     </div>
   );
 }
