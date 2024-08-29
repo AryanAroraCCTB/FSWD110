@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 // import { App } from "./App/App";
-import { RouterDemo } from "./RouterDemo/RouterDemo";
+// import { RouterDemo } from "./RouterDemo/RouterDemo";
+import { TodoList } from "./TodoList/TodoList";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(<RouterDemo />);
+root.render(<TodoList />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

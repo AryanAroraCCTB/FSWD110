@@ -1,0 +1,36 @@
+.container {
+    margin: 30px;
+}
+
+.text {
+    letter-spacing: 1px;
+    line-height: 2.5ch;
+}
+
+.add {
+    border: 5px double gray;
+    padding: 20px;
+}
+
+.add .text {
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.add .inputs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.add button {
+    margin: 5px;
+}
+
+.todo {
+    border: 1px solid green;
+    padding: 5px 10px; 
+    margin: 5px;
+}
